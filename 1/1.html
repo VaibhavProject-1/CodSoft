@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <title>Your Portfolio</title>
+    <title>My Portfolio</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="logo">
             <h1>Vaibhav Patel</h1>
         </div>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -23,7 +23,16 @@
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="dark-mode-toggle" onclick="toggleDarkMode()">Dark</div>
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                <label class="switch">
+                    <input class="switch-input" type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                    <span class="switch-label" data-on="Dark" data-off="Light">
+                        <span class="switch-handle"></span>
+                    </span>
+                </label>
+            </div>
+            
+                       
         </nav>
     </header>
 
@@ -31,8 +40,9 @@
         <div class="container">
             <div class="content" data-aos="fade-right">
                 <h2>About Me</h2>
-                <p>Your brief description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque.</p>
+                <p>
+                    Hi, I'm Vaibhav Patel, a dedicated Computer Science Student in software development. Passionate about cutting-edge technologies, I specialize in creating impactful web experiences and exploring AI, ML, and Android App development. I'm committed to continuous learning and thrive in collaborative, challenging environments. Let's connect and explore the exciting possibilities of programming together!
+            </p>
             </div>
             <div class="image" data-aos="fade-left">
                 <img src="./web_dev.svg" alt="Image 1" height="600px" width="600px">
@@ -220,6 +230,22 @@
 
             AOS.init();
         });
+    </script>
+    <script>
+        function toggleDarkMode() {
+            var icon = document.getElementById("darkModeIcon");
+            if (icon.classList.contains("bi-brightness-high-fill")) {
+                // Switch to dark mode
+                icon.classList.remove("bi-brightness-high-fill");
+                icon.classList.add("bi-moon-fill");
+                // Add logic for toggling dark mode
+            } else {
+                // Switch to light mode
+                icon.classList.remove("bi-moon-fill");
+                icon.classList.add("bi-brightness-high-fill");
+                // Add logic for toggling light mode
+            }
+        }
     </script>
     <script>
         function toggleDarkMode() {
