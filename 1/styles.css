@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.dark-mode-toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #343a40;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    float: right;
+    margin-top: 5px;
+}
+
+.dark-mode-toggle.dark {
+    background-color: #ffd700;
+}
+
+.alternate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 0;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#about .content,
+#about .image {
+    width: 45%; /* Adjust this value as needed to control the width of text and image */
+}
+
+#about img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.skills-list li {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+}
+
+
+.skills-list  a{
+    margin-top: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    
+}
+
+.projects {
+    padding: 80px 0;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.project-details {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.resume {
+    padding: 80px 0;
+}
+
+.contact {
+    background-color: #343a40;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Add this CSS for dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #fefeff;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s; /* Add transition for color change */
+    float: right;
+    margin-top: -36px;
+    color: #333;
+}
+
+.dark-mode-toggle.dark {
+    background-color: #fafafa;
+    color: #333; /* Adjust the color for dark mode */
+    /* You can customize the styles for the dark mode button in dark mode here */
+}
+
