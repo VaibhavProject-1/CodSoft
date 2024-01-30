@@ -1,0 +1,115 @@
+/* AdminDashboard.css */
+
+/* AdminDashboard.css */
+.admin-dashboard {
+  position: relative;
+}
+
+
+
+/* Add any other styles for the EditUserModal component */
+
+
+.user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+
+  .default-avatar {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-color: #ccc; /* Set a background color for the default avatar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555; /* Set the text color */
+    font-size: 14px; /* Adjust the font size */
+  }
+  
+  /* Update the styles for better visibility */
+
+/* AdminDashboard.css */
+
+/* AdminDashboard.css */
+
+/* AdminDashboard.css */
+
+.user-cards {
+  display: flex;
+  flex-direction: column; /* Display cards in a single column */
+}
+
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px 0; /* Adjust top and bottom margin */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow cards to grow to fill the space */
+  min-width: 200px; /* Set a minimum width for better spacing */
+  justify-content: space-between;
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-card h3 {
+  margin: 8px 0;
+}
+
+.user-card p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.user-actions button {
+  margin-right: 8px;
+}
+
+.user-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Optional: Add margin between action buttons */
+.user-actions button {
+  margin-right: 8px;
+}
+
+
+
+
+  /* Add more styling as needed */
+  

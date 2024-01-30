@@ -1,0 +1,48 @@
+/* FooterPlayer.css */
+.footer-player {
+    position: sticky;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    background-color: #181818;
+    color: #b3b3b3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #282828;
+    width: 100%;
+  }
+  
+  .song-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .song-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .song-artist {
+    font-size: 12px;
+  }
+  
+  .controls button {
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+  }
+  
+  .controls button:hover {
+    color: #1ed760;
+  }
+  
+  .controls svg {
+    width: 20px;
+    height: 20px;
+  }

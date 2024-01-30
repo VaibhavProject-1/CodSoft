@@ -1,0 +1,54 @@
+/* Header.css */
+.header__searchIcon {
+    width: 24px;
+    height: 24px;
+    fill: #fff; /* Set the color you want for the search icon */
+    cursor: pointer;
+}
+
+.header__avatar {
+    width: 70px; /* Set the desired width and height for the circular avatar */
+    height: 70px;
+    border-radius: 50%; /* Make the avatar circular */
+    object-fit: cover; /* Ensure the image covers the circular area */
+}
+
+/* Dropdown styles */
+.header__profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.header__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #282828; /* Set the background color for the dropdown */
+    border: 1px solid #535353; /* Set the border color for the dropdown */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+}
+
+.header__profile:hover .header__dropdown {
+    display: block;
+}
+
+.header__dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #fff; /* Set the text color for the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header__dropdown button:hover {
+    background-color: #535353; /* Set the background color on hover */
+}
+
+/* Add more styling as needed */

@@ -1,0 +1,50 @@
+/* sidebar.css */
+
+.sidebar {
+  background-color: #040404;
+  color: #fff;
+  width: 50px;
+  height: 600px;
+  position: fixed;
+  top: 100px;
+  left: -35px; /* Initially off-screen to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  transition: left 0.3s ease; /* Add smooth transition effect */
+  z-index: 2; /* Ensure sidebar is above other content */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #1db954; /* Spotify green color */
+}
+
+.sidebar button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* main-content.css */
+
+.main-content {
+  margin-left: 0; /* No margin to the left */
+  transition: margin-left 0.3s ease; /* Add smooth transition effect */
+  z-index: 1; /* Ensure main content is below other content */
+}
+
+
+
